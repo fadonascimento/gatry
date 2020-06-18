@@ -1,0 +1,74 @@
+:root {
+  /* Color palette */
+  --color-black: #212121;
+  --color-gray: #888888;
+  --color-lightgray: #dedede;
+  --color-white: #ffffff;
+  --color-gatry-pink: #FF5E99;
+  --color-gatry-darkerpink: #FF286F;
+
+  /* Button */
+  --button-cta-font-color: var(--color-black);
+  --button-cta-bg-color: var(--color-lightgray);
+  --button-cta-border-color: var(--color-black);
+  --button-cta-font-color--hover: var(--color-gray);
+  --button-cta-bg-color--hover: var(--color-white);
+  --button-cta-border-color--hover: var(--color-gray);
+  --button-cta-font-color--disabled: var(--color-gray);
+  --button-cta-bg-color--disabled: var(--color-white);
+  --button-cta-border-color--disabled: var(--color-gray);
+
+  --button-cta-primary-font-color: var(--color-gatry-pink);
+  --button-cta-primary-bg-color: var(--color-white);
+  --button-cta-primary-border-color: var(--color-gatry-pink);
+  --button-cta-primary-font-color--hover: var(--color-white);
+  --button-cta-primary-bg-color--hover: var(--color-gatry-pink);
+  --button-cta-primary-border-color--hover: var(--color-gatry-darkerpink);
+  --button-cta-primary-font-color--disabled: var(--color-gray);
+  --button-cta-primary-bg-color--disabled: var(--color-white);
+  --button-cta-primary-border-color--disabled: var(--color-gray);
+}
+
+.button-cta{
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  vertical-align: middle;
+  outline: none;
+  border-radius: 2rem;
+  color: var(--button-cta-font-color);
+  background-color: var(--button-cta-bg-color);
+  border: 1px solid var(--button-cta-border-color);
+}
+.button-cta[disabled]{
+  cursor: default;
+  color: var(--button-cta-font-color--disabled);
+  background-color: var(--button-cta-bg-color--disabled);
+  border: 1px solid var(--button-cta-border-color--disabled);
+}
+.button-cta:not([disabled]):hover{
+  color: var(--button-cta-font-color--hover);
+  background-color: var(--button-cta-bg-color--hover);
+  border: 1px solid var(--button-cta-border-color--hover);
+}
+.button-cta--primary{
+  font-size: 1.2rem;
+  padding: 0.4rem 1.5rem;
+  color: var(--button-cta-primary-font-color);
+  background-color: var(--button-cta-primary-bg-color);
+  border: 1px solid var(--button-cta-primary-border-color);
+}
+.button-cta--primary[disabled]{
+  cursor: default;
+  color: var(--button-cta-primary-font-color--disabled);
+  background-color: var(--button-cta-primary-bg-color--disabled);
+  border: 1px solid var(--button-cta-primary-border-color--disabled);
+}
+.button-cta--primary:not([disabled]):hover{
+  color: var(--button-cta-primary-font-color--hover);
+  background-color: var(--button-cta-primary-bg-color--hover);
+  border: 1px solid var(--button-cta-primary-border-color--hover);
+}

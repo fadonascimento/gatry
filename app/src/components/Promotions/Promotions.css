@@ -1,0 +1,54 @@
+.promotion{
+  display: flex;
+  margin-bottom: 15px;
+  color: #595959;
+  border: 1px solid #E9E9E9;
+}
+
+.promotion__image {
+  margin: 15px;
+  width: 30%;
+  min-width: 100px;
+}
+
+.promotion__details {
+  padding: 15px 15px 15px 0;
+  width: 70%;
+}
+
+.promotion_info{
+  display: inline-block;
+  margin: 0 0 15px;
+}
+
+.promotion_info--title {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.promotion_info--price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Tablet */
+@media only screen and (min-width: 425px) {
+  .promotion_info--title {
+    font-size: 1.6rem;
+  }
+
+  .promotion_info--price {
+    font-size: 1.4rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .promotion_info--title {
+    font-size: 1.8rem;
+  }
+
+  .promotion_info--price {
+    font-size: 1.6rem;
+  }
+}

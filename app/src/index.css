@@ -1,0 +1,23 @@
+html, body{ 
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Futura,"Century Gothic",AppleGothic,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEE;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}

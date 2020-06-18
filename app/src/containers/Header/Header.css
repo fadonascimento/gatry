@@ -1,0 +1,22 @@
+.header_container {
+  border-bottom: 1px solid #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_container img{
+  height: 35px;
+}
+
+.header_container h1{
+  margin: 0;
+  margin-left: 15px;
+}
+
+.header_container h1 a{
+  color: #FF5E99;
+  font-size: 42px;
+  font-weight: normal;
+  text-decoration: none;
+}
