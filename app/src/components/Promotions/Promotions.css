@@ -8,7 +8,7 @@
 
 .promotion__image {
   margin: 15px;
-  width: 30%;
+  width: 25%;
   min-width: 100px;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-top: 15px;
-  width: 70%;
+  width: 75%;
 }
 
 .promotion__details_product{
@@ -44,7 +44,7 @@
 
 .promotion_info--title {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .promotion_info--comment_preview {
@@ -120,7 +120,7 @@
 /* Tablet */
 @media only screen and (min-width: 425px) {
   .promotion_info--title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .promotion_info--price {
@@ -131,7 +131,7 @@
 /* Desktop */
 @media only screen and (min-width: 768px) {
   .promotion_info--title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .promotion_info--price {
