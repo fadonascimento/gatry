@@ -2,7 +2,8 @@ import React from 'react';
 import {Button} from './../Button';
 
 const Promotion = ({promotion}) => {
-  const {link, title, image, price, storeName, date, user} = promotion;
+  // const {link, title, image, price, storeName, date, user} = promotion;
+  const {title, image, price} = promotion;
 
   return (
     <div className="promotion">
