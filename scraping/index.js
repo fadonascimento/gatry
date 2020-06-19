@@ -12,7 +12,7 @@ let scrape = async () => {
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
   let result = []
-  let total = 27;
+  let total = 18;
   let pages = 0
 
 
@@ -21,17 +21,24 @@ let scrape = async () => {
     pages += 9
 
     let acc = await page.evaluate(() => {
-      const books = []
+      const items = []
       document.querySelectorAll('.content .promocao')
-      .forEach(book => {
+      .forEach(item => {
         let data = {
-          link: book.querySelector('h3 a').getAttribute('href'),
-          title: book.querySelector('h3 a').text,
-          img: book.querySelector('.imagem a').innerHTML
+          id: item.getAttribute('id').replace(/\D+/g, ""),
+          link: item.querySelector('h3 a').getAttribute('href'),
+          title: item.querySelector('h3 a').text,
+          img: {
+            uri: item.querySelector('.imagem img').getAttribute('src'),
+          } 
+          price: {
+            currency: item.querySelector('[itemprop="priceCurrency"]')?.innerHTML,
+            value: item.querySelector('[itemprop="price"]')?.innerHTML
+          }
         }
-        books.push(data)
+        items.push(data)
       })
-      return books
+      return items
     })
 
     result = [...result, ...acc]
