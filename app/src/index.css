@@ -1,13 +1,19 @@
-html, body{ 
+@font-face {
+  font-family: "Futura Book";
+  src: url("/fonts/Futura Book.woff") format("woff"),
+       url("/fonts/Futura Book.ttf") format("truetype");
+}
+
+html, body{
   min-height: 100vh;
 }
 
 body {
   margin: 0;
-  font-family: Futura,"Century Gothic",AppleGothic,sans-serif;
+  background-color: #EEE;
+  font-family: "Futura Book", Futura,"Century Gothic", AppleGothic, sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EEE;
 }
 
 *, *:before, *:after {
