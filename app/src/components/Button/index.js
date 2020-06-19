@@ -1,5 +1,7 @@
 import Button from './Button';
+import ButtonLink from './ButtonLink';
 
 export {
-  Button
+  Button,
+  ButtonLink
 };

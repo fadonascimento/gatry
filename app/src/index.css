@@ -27,3 +27,8 @@ img {
   -moz-user-select: none;
   user-select: none;
 }
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
