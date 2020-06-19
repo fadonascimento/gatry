@@ -100,7 +100,8 @@
     width: auto;
   }
 
-  .promotion__details_product{
+  .promotion__details_product,
+  .promotion__details_post{
     padding-left: 15px;
   }
 
