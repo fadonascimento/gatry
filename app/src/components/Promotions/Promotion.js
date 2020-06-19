@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, ButtonLink} from './../Button';
+import {ButtonLink} from './../Button';
 
 const Promotion = ({promotion}) => {
   const {link, title, image, price, commentPreview, storeName, date, user} = promotion;
