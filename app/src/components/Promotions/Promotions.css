@@ -104,6 +104,10 @@
   .promotion__details_post{
     padding-left: 15px;
   }
+  
+  .promotion__details_post {
+    background: #FAFAFA;
+  }
 
   .button-container .button-cta{
     padding: 8px 25px;
