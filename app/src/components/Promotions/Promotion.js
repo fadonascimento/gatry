@@ -7,12 +7,12 @@ const Promotion = ({promotion}) => {
   return (
     <div className="promotion">
       <div className="promotion__image">
-        <a href={link} target="_blank"><img src={image} alt="{title}" /></a>
+        <a href={link} target="_blank" rel="noopener noreferrer"><img src={image} alt="{title}" /></a>
       </div>
       <div className="promotion__details">
         <div className="promotion__details_product">
           <span className="promotion_info promotion_info--store_name">{storeName}</span>
-          <h2 className="promotion_info promotion_info--title"><a href={link} target="_blank">{title}</a></h2>
+          <h2 className="promotion_info promotion_info--title"><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></h2>
           <span className="promotion_info promotion_info--comment_preview">"{commentPreview}"</span>
           <div className="promotion-row-container">
             <span className="promotion_info promotion_info--price">{price}</span>
