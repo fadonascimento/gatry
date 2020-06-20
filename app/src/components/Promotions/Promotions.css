@@ -112,8 +112,19 @@
   .button-container .button-cta span{
     display: none;
   }
-  .button-container .button-cta:after {
-    content: "🡲";
+  .button-container .button-cta::after {
+    content: "";
+    -webkit-mask-image: url("/images/icon-arrow-2.svg");
+    mask-image: url("/images/icon-arrow-2.svg");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: var(--button-cta-primary-font-color);
+    display: block;
+    height: 12px;
+    width: 12px;
+  }
+  .button-container .button-cta:hover::after {
+    background-color: var(--button-cta-primary-font-color--hover);
   }
 }
 
