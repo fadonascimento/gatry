@@ -114,8 +114,8 @@
   }
   .button-container .button-cta::after {
     content: "";
-    -webkit-mask-image: url("/images/icon-arrow-2.svg");
-    mask-image: url("/images/icon-arrow-2.svg");
+    -webkit-mask-image: url("/images/icon-arrow.svg");
+    mask-image: url("/images/icon-arrow.svg");
     -webkit-mask-size: contain;
     mask-size: contain;
     background-color: var(--button-cta-primary-font-color);
