@@ -13,7 +13,7 @@ const Promotion = ({promotion}) => {
         <div className="promotion__details_product">
           <span className="promotion_info promotion_info--store_name">{storeName}</span>
           <h2 className="promotion_info promotion_info--title"><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></h2>
-          <span className="promotion_info promotion_info--comment_preview">"{commentPreview}"</span>
+          <span className="promotion_info promotion_info--comment_preview">{commentPreview}</span>
           <div className="promotion-row-container">
             <span className="promotion_info promotion_info--price">{price}</span>
             <div className="button-container">
