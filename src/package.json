@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "xfull-build": "npm --prefix scraping run server && npm --prefix app run client-build",
-    "xfull-start": "npm --prefix scraping run server && npm --prefix app run client-start",
-    "full-build": "concurrently --kill-others-on-fail \"npm --prefix scraping run server\" \"cd ..\" \"npm --prefix app run client-build\"",
-    "full-start": "concurrently --kill-others-on-fail \"npm --prefix scraping run server\" \"cd ..\" \"npm --prefix app run client-start\""
+    "xfull-build": "npm --prefix scraping run server && npm --prefix app run build",
+    "xfull-start": "npm --prefix scraping run server && npm --prefix app run start",
+    "full-build": "concurrently --kill-others-on-fail \"npm --prefix scraping run server\" \"cd ..\" \"npm --prefix app run build\"",
+    "full-start": "concurrently --kill-others-on-fail \"npm --prefix scraping run server\" \"cd ..\" \"npm --prefix app run start\""
   },
   "author": "",
   "license": "ISC",
