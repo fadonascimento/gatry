@@ -1,0 +1,21 @@
+{
+  "name": "gatry_scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd ../app && npm run build",
+    "server": "node server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.2.2",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

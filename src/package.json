@@ -1,0 +1,23 @@
+{
+  "name": "gatry_application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "full-build": "npm run server && cd .. && npm run client-build",
+    "xfull-start": "npm run server && npm run client-start",
+    "full-start": "concurrently --kill-others-on-fail \"npm run server\" \"cd ..\" \"npm run client-start\"",
+    "server": "cd scraping && node server",
+    "client-start": "cd app && npm run start",
+    "client-build": "cd app && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.2.2",
+    "node-fetch": "^2.6.0"
+  }
+}
