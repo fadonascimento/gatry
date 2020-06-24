@@ -9,11 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "jsdom": "^16.2.2",
-    "node-fetch": "^2.6.0",
-    "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
