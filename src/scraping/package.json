@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "client": "cd ../app && npm run build",
-    "server": "node server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "server": "node server.js"
   },
   "license": "MIT",
   "dependencies": {

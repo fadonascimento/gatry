@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "full-build": "npm run server && cd .. && npm run client-build",
-    "xfull-start": "npm run server && npm run client-start",
+    "xfull-build": "npm run server && cd .. && npm run client-build",
+    "xfull-start": "npm run server && cd .. && npm run client-start",
+    "full-start": "concurrently --kill-others-on-fail \"npm run server\" \"cd ..\" \"npm run client-build\"",
     "full-start": "concurrently --kill-others-on-fail \"npm run server\" \"cd ..\" \"npm run client-start\"",
     "server": "cd scraping && node server",
     "client-start": "cd app && npm run start",
