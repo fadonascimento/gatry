@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "server": "node server.js",
-    "server:prod": "netlify-lambda build server.js"
+    "server:prod": "netlify-lambda build server"
   },
   "license": "MIT",
   "dependencies": {
