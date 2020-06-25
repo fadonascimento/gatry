@@ -28,9 +28,10 @@ router.get('/api/check-updates/:timestamp', async (req, res) => {
 
 const env = process.env.NODE_ENV || 'development';
 if (env === 'development') {
+  const routePath = '/';
   const port = process.env.PORT || 5000;
   app.listen(port, () => console.log(`Environment = "${env}". Listening on port ${port}.`));
-  app.use('', router);
+  app.use(routePath, router);
 }
 else {
   const routePath = '/.netlify/functions/server';
