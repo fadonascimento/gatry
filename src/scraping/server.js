@@ -19,6 +19,17 @@ router.get('/api/check-updates/:timestamp', async (req, res) => {
   res.send(response);
 });
 
-app.use('/.netlify/functions/server', router);
 
+const env = process.env.NODE_ENV || 'development';
+if (env === 'development') {
+  const port = process.env.PORT || 5000;
+  app.listen(port, () => console.log(`Local server listening on port ${port}!`));
+  app.use('', router);
+}
+else {
+  app.use('/.netlify/functions/server', router);
+}
+
+module.exports = app;
 module.exports.handler = serverless(app);
+
