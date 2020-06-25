@@ -1,4 +1,4 @@
-const {GatryScraping} = require('./modules/scraping/scraping');
+const {GatryScraping} = require('../modules/scraping/scraping');
 const express = require('express');
 const serverless = require('serverless-http');
 
