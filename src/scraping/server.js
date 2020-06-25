@@ -23,11 +23,13 @@ router.get('/api/check-updates/:timestamp', async (req, res) => {
 const env = process.env.NODE_ENV || 'development';
 if (env === 'development') {
   const port = process.env.PORT || 5000;
-  app.listen(port, () => console.log(`Local server listening on port ${port}!`));
+  app.listen(port, () => console.log(`Environment = "${env}". Listening on port ${port}.`));
   app.use('', router);
 }
 else {
-  app.use('/.netlify/functions/server', router);
+  const routePath = '/.netlify/functions/server';
+  console.log(`Environment = "${env}". Routing requests to "${routePath}".`);
+  app.use(routePath, router);
 }
 
 module.exports = app;
