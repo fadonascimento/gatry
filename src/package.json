@@ -1,0 +1,29 @@
+{
+  "name": "gatry_application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "xfull-build": "npm --prefix scraping run start && npm --prefix app run build",
+    "xfull-start": "npm --prefix scraping run start && npm --prefix app run start",
+    "full-build": "concurrently --kill-others-on-fail \"npm --prefix scraping run build\" \"npm --prefix app run build\"",
+    "full-start": "concurrently --kill-others-on-fail \"npm --prefix scraping run build\" \"npm --prefix app run start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.4",
+    "jsdom": "^16.2.2",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "serverless-http": "^2.5.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "gatry_scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "netlify-lambda build server"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsdom": "^16.2.2",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
