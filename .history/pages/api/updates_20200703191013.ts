@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
+
  let output = null;
   try{
     const response = await fetch('https://gatry.com/home/bullets?data=2020-06-16+18:00:00');
